@@ -49,6 +49,10 @@ app.MapPost("games", (CreateGameDto newGame) => {
     games.Add(game);
 
     return Results.CreatedAtRoute(GetGameEndpointName, new { id = game.Id }, game);
+    // CreateAtRoute generate a 201 Created HTTP response
+    // Route Name: "GetGame" is the name given to the GET /games/{id} endpoint using .WithName("GetGame").
+    // Route Values: new { id = game.Id } constructs the route values needed to generate the URI of the newly created game.
+    // Response Body: game is the newly created GameDto object that is returned in the response body.
 });
 
 // PUT /games
