@@ -4,7 +4,7 @@ public record class CreateGameDto(
     string Name,
     string Genre,
     decimal Price,
-    DateOnly RealeaseDate
+    DateOnly ReleaseDate
 )
 {
 

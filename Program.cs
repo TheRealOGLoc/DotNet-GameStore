@@ -44,7 +44,7 @@ app.MapPost("games", (CreateGameDto newGame) => {
         newGame.Name,
         newGame.Genre,
         newGame.Price,
-        newGame.RealeaseDate
+        newGame.ReleaseDate
     );
     games.Add(game);
 
