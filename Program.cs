@@ -1,6 +1,5 @@
 using GameStore.Dtos;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
